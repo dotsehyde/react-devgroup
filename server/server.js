@@ -29,6 +29,15 @@ app.use('^/$', (req, res, next) => {
 });
 app.use(express.static(path.resolve(__dirname, '..', 'build')));
 
+const router = express.Router()
+
+app.use('/api', router)
+
+router.get('/hello', (req, res) => {
+	return res.json({
+		data: "hello"
+	})
+})
 
 app.listen(70, () => {
 	console.log("Server is running on port 70");
