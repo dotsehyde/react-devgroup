@@ -1,15 +1,15 @@
 import React from 'react'
-import netflix from '../assets/netflix.svg'
-import fedex from '../assets/fedex.svg'
-import nasa from '../assets/nasa.svg'
-import coca from '../assets/coca.svg'
-import lego from '../assets/lego.svg'
-import work1 from '../assets/work1.png'
-import work2 from '../assets/work2.png'
-import work3 from '../assets/work3.png'
-import work4 from '../assets/work4.png'
 
 export const OurClient = () => {
+	const netflix = '../assets/netflix.svg'
+	const fedex = '../assets/fedex.svg'
+	const nasa = '../assets/nasa.svg'
+	const coca = '../assets/coca.svg'
+	const lego = '../assets/lego.svg'
+	const work1 = '../assets/work1.png'
+	const work2 = '../assets/work2.png'
+	const work3 = '../assets/work3.png'
+	const work4 = '../assets/work4.png'
 	const works = [{
 		title: "Keyword Tool Redesign",
 		img: work1,

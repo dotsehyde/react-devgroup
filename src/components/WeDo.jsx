@@ -1,18 +1,18 @@
 
 import React from 'react'
-import codeIcon from '../assets/icon/code.svg'
-import andIcon from '../assets/icon/android.svg'
-import iosIcon from '../assets/icon/ios.svg'
-import paintIcon from '../assets/icon/paint.svg'
-import eyeIcon from '../assets/icon/eye.svg'
-import goodIcon from '../assets/icon/good.svg'
-import handIcon from '../assets/icon/hands.svg'
-import targetIcon from '../assets/icon/target.svg'
-import searchIcon from '../assets/icon/search.svg'
 
 
 export default function WeDo() {
 
+	const codeIcon = '../assets/icon/code.svg'
+	const andIcon = '../assets/icon/android.svg'
+	const iosIcon = '../assets/icon/ios.svg'
+	const paintIcon = '../assets/icon/paint.svg'
+	const eyeIcon = '../assets/icon/eye.svg'
+	const goodIcon = '../assets/icon/good.svg'
+	const handIcon = '../assets/icon/hands.svg'
+	const targetIcon = '../assets/icon/target.svg'
+	const searchIcon = '../assets/icon/search.svg'
 	const cards = [
 		{
 			title: "Web development",

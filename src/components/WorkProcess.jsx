@@ -1,8 +1,8 @@
 import React from 'react'
-import img from '../assets/work_process.svg'
 import { Link } from 'react-router-dom';
 
 export default function WorkProcess() {
+	const img = '../assets/work_process.svg'
 	return (
 		<div className='bg-[#EDF4F4] h-[360px] w-full justify-center lg:justify-start items-center mt-[80px] md:mt-[250px] mb-[50px] flex md:relative'>
 			<div className='flex flex-col items-center lg:items-start ml-0 md:ml-[50px] mt-[50px] lg:ml-[100px]'>

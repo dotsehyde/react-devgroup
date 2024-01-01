@@ -1,15 +1,15 @@
 import React from 'react'
-import heroImg from '../assets/hero.svg'
 import { Link } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import authStore from '../providers/AuthStore';
 
 const Hero = observer(() => {
+	const heroImg = '../assets/hero.svg'
 	return (
 		<div className='md:flex-row mt-4 md:mt-0 items-center justify-between flex-col-reserve flex flex-col gap-1'>
 			<div>
 				<p className='text-[15px] md:text-[20px] font-[300] md:mt-[50px] text-gray-600'>Oh, Hello {
-					authStore.isAuthenticated ? authStore.user.name : "Guest"
+					authStore.isAuthenticated ? authStore.user.name : "z"
 				}</p>
 				<p className='font-[700] text-[#1A0D7C] text-[30px] md:text-[42px] mt-[20px] md:mt-[25px] lg:text-[64px] leading-none'>
 					We are a software <br /> development and <br />design company
