@@ -48,27 +48,50 @@ const Header = observer(() => {
 					</svg>
 				</div>
 			</div >
+
+
+			{/* Mobile Menu */}
+
 			<motion.div
-				animate={{ x: isMenuOpen ? 0 : '100%' }}
+				className="relative z-[99]"
+				animate={{ opacity: isMenuOpen ? 1 : 0 }}
 				transition={{ duration: 0.5 }}
-				className="bg-white h-full w-[300px] absolute right-0  shadow-lg ">
-				<ul className='flex flex-col gap-2 py-4 px-5 text-gray-600 font-semibold items-center divide-y w-[100%]'>
-					<li className='hover:text-gray-400 hover:cursor-pointer'>Services</li>
-
-					<Link to={"/about"} className='hover:text-gray-400 hover:cursor-pointer'>About</Link>
-
-					<li className='hover:text-gray-400 hover:cursor-pointer'>Project</li>
-
-					<li className='hover:text-gray-400 hover:cursor-pointer'>Career</li>
-					<li
-						className='hover:text-gray-400 hover:cursor-pointer'
+			>
+				{isMenuOpen && (
+					<motion.div
+						className="fixed inset-0 bg-black bg-opacity-10"
 						onClick={() => {
-							authStore.slideOverOpen = !authStore.slideOverOpen
+							setIsMenuOpen(!isMenuOpen);
 						}}
-					>Login</li>
-					<li className='bg-[#A1D7D4] py-2 px-[25px] rounded-[24px]'>Contact us</li>
-				</ul >
+					></motion.div>)}
+				<motion.div
+					initial={{ x: '100%' }}
+					animate={{ x: isMenuOpen ? 0 : '100%' }}
+					transition={{ duration: 0.5 }}
+					className="fixed inset-y-0 right-0 flex max-w-full pl-10"
+				>
+					<div className="bg-white w-[400px] md:w-[500px]">
+						<ul className='flex flex-col gap-2 py-4 px-5 text-gray-600 font-semibold items-center divide-y w-[100%]'>
+
+							<li className='hover:text-gray-400 hover:cursor-pointer'>Services</li>
+
+							<Link to={"/about"} className='hover:text-gray-400 hover:cursor-pointer'>About</Link>
+
+							<li className='hover:text-gray-400 hover:cursor-pointer'>Project</li>
+
+							<li className='hover:text-gray-400 hover:cursor-pointer'>Career</li>
+							<li
+								className='hover:text-gray-400 hover:cursor-pointer'
+								onClick={() => {
+									authStore.slideOverOpen = !authStore.slideOverOpen
+								}}
+							>Login</li>
+							<li className='bg-[#A1D7D4] py-2 px-[25px] rounded-[24px]'>Contact us</li>
+						</ul>
+					</div>
+				</motion.div>
 			</motion.div>
+
 
 			<Login />
 		</>

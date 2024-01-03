@@ -16,6 +16,7 @@ app.use('^/$', (req, res, next) => {
 		if (err) {
 			return res.status(500).send("Internal Server Error");
 		}
+		console.log("req.url", req.url);
 		const html = data.replace(
 			'<div id="root"></div>',
 			`<div id="root">${renderToString(

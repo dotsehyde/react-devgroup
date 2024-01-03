@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import WeDo from '../components/WeDo';
 import WorkProcess from '../components/WorkProcess';
 import { OurClient } from '../components/OurClient';
+import { Footer } from '../components/Footer';
 
 export default function HomeView() {
 	return (
@@ -15,6 +16,7 @@ export default function HomeView() {
 			<WeDo />
 			<WorkProcess />
 			<OurClient />
+			<Footer />
 		</>
 	)
 }

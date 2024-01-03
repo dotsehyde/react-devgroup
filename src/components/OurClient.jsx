@@ -60,10 +60,10 @@ export const OurClient = () => {
 				</div>
 			</div>
 			{/* Testimonies */}
-			<div className='bg-[#F6FCFC] px-[50px] md:px-[150px]'>
+			<div className='bg-[#F6FCFC] px-[50px] md:px-[150px] py-[25px] '>
 				<p className='font-[700] text-[#1A0D7C] text-[25px] py-[25px] md:py-[50px] lg:text-[44px] text-center'>We trusted by</p>
 
-				<p className='text-[#0E101A] text-[15px] text-center'>The in-house team is impressed with the quality of the designs and the quick turnaround times. DevGroup’s ability<br />
+				<p className='text-[#0E101A] text-[15px] pb-[20px] text-center'>The in-house team is impressed with the quality of the designs and the quick turnaround times. DevGroup’s ability<br />
 					to meet tight deadlines and make themselves available when needed made them a reliable partner. They did web design<br /> in an ongoing partnership. They collaborated on design ideas and delivered mockups, UI kits, images, and icons.</p>
 			</div>
 		</>

@@ -48,19 +48,19 @@ export const Login = observer(() => {
 						<div className='mt-[50px] flex flex-col items-center gap-5'>
 							<img src={logo} alt="logo" width={"30%"} />
 							<p className='text-center text-lg'>Login into your account...</p>
-							<div class="w-full max-w-xs mx-auto">
+							<div className="w-full mx-auto px-[50px]">
 								<input
 									value={email}
 									onChange={(e) => {
 										setEmail(e.target.value)
-									}} type="email" placeholder="Email Address" class="flex w-full h-10 px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 ring-offset-background placeholder:text-neutral-500 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50" />
+									}} type="email" placeholder="Email Address" className="flex w-full h-10 px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 ring-offset-background placeholder:text-neutral-500 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50" />
 							</div>
 
-							<div class="w-full max-w-xs mx-auto">
+							<div className="w-full mx-auto px-[50px]">
 								<input value={password}
 									onChange={(e) => {
 										setPassword(e.target.value)
-									}} type="password" placeholder="Password" class="flex w-full h-10 px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 ring-offset-background placeholder:text-neutral-500 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50" />
+									}} type="password" placeholder="Password" className="flex w-full h-10 px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 ring-offset-background placeholder:text-neutral-500 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50" />
 							</div>
 							<motion.button
 								whileHover={{ scale: 1.1 }}
